@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>保胆手术适应性初步评估工具</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>保胆手术适应性初步评估工具</h1>
+        <p class="subtitle">胆囊保留治疗初筛问卷 - 仅供参考</p>
+      </header>
+
+      <main>
+        <form id="assessmentForm">
+          <section class="form-section">
+            <h2>A. 症状表现 (4项)</h2>
+
+            <div class="form-group">
+              <label for="biliaryColic">1) 典型胆绞痛 / 右上腹疼痛：</label>
+              <select id="biliaryColic" required>
+                <option value="">请选择</option>
+                <option value="none">无</option>
+                <option value="occasional">偶尔发作</option>
+                <option value="recurrent">反复发作（近6个月内≥2次）</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="fever">2) 发热（≥38°C）或寒战：</label>
+              <select id="fever" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="jaundice">3) 黄疸或尿色加深：</label>
+              <select id="jaundice" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pancreatitis">4) 既往胆源性胰腺炎病史：</label>
+              <select id="pancreatitis" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2>B. 超声 / 影像学检查 (6项)</h2>
+
+            <div class="form-group">
+              <label for="mainFinding">5) 主要影像学发现：</label>
+              <select id="mainFinding" required>
+                <option value="">请选择</option>
+                <option value="stones">胆囊结石</option>
+                <option value="sludge">胆泥/淤泥样改变</option>
+                <option value="polyp">以息肉为主（无明确结石）</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stoneSize">6) 最大结石直径：</label>
+              <select id="stoneSize" required>
+                <option value="">请选择</option>
+                <option value="<=5mm">≤5mm</option>
+                <option value="6-10mm">6-10mm</option>
+                <option value="11-20mm">11-20mm</option>
+                <option value=">20mm">&gt;20mm</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stoneNumber">7) 结石数量：</label>
+              <select id="stoneNumber" required>
+                <option value="">请选择</option>
+                <option value="single">单枚</option>
+                <option value="2-3">2-3枚</option>
+                <option value="multiple">多发（≥4枚）</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="wallThickness">8) 胆囊壁厚度：</label>
+              <select id="wallThickness" required>
+                <option value="">请选择</option>
+                <option value="<=3mm">≤3mm</option>
+                <option value="4-5mm">4-5mm</option>
+                <option value=">5mm">&gt;5mm</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="porcelain">9) 瓷性胆囊或胆囊壁钙化：</label>
+              <select id="porcelain" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="neckImpaction">10) 胆囊颈部嵌顿或疑似胆囊管结石：</label>
+              <select id="neckImpaction" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2>C. 胆总管情况 (2项)</h2>
+
+            <div class="form-group">
+              <label for="cbdStatus">11) 胆总管扩张或疑似胆总管结石：</label>
+              <select id="cbdStatus" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="labsObstruction">12) 近期化验提示梗阻（胆红素/ALP/GGT异常）：</label>
+              <select id="labsObstruction" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2>D. 胆囊功能 (1项)</h2>
+
+            <div class="form-group">
+              <label for="ejectionFraction">13) 胆囊排空分数（EF）：</label>
+              <select id="ejectionFraction" required>
+                <option value="">请选择</option>
+                <option value="unknown">未做或结果不明</option>
+                <option value=">=50%">≥50%</option>
+                <option value="35-49%">35-49%</option>
+                <option value="<35%">&lt;35%</option>
+                <option value="non-visualized">不显影或萎缩</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2>E. 合并症与特殊状态 (4项)</h2>
+
+            <div class="form-group">
+              <label for="liverDisease">14) 慢性肝病：</label>
+              <select id="liverDisease" required>
+                <option value="">请选择</option>
+                <option value="none">无</option>
+                <option value="stable">稳定</option>
+                <option value="decompensated">失代偿或近期不稳定</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="diabetes">15) 糖尿病：</label>
+              <select id="diabetes" required>
+                <option value="">请选择</option>
+                <option value="none">无</option>
+                <option value="controlled">控制良好</option>
+                <option value="poorly-controlled">控制不佳或有并发症</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="hyperlipidemia">16) 高脂血症/代谢综合征：</label>
+              <select id="hyperlipidemia" required>
+                <option value="">请选择</option>
+                <option value="none">无</option>
+                <option value="yes">是</option>
+                <option value="unknown">不清楚</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pregnancy">17) 3-6个月内计划怀孕（女性）：</label>
+              <select id="pregnancy" required>
+                <option value="">请选择</option>
+                <option value="no">否</option>
+                <option value="yes">是</option>
+                <option value="na">不适用</option>
+              </select>
+            </div>
+          </section>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">评估</button>
+            <button type="button" id="resetBtn" class="btn btn-secondary">重置</button>
+          </div>
+        </form>
+
+        <div id="resultSection" class="result-section" style="display: none;">
+          <div id="resultContent"></div>
+          <div class="button-group">
+            <button type="button" id="copyBtn" class="btn btn-primary">复制结果</button>
+            <button type="button" id="newAssessmentBtn" class="btn btn-secondary">新评估</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="disclaimer">
+        <h3>⚠️ 重要声明</h3>
+        <p>
+          本工具仅为教育性质的初步风险筛查问卷，<strong>不能替代专业医生的临床诊断与决策</strong>。
+          所有结果均基于简化规则，不考虑个体差异及完整病史。任何治疗方案的选择，必须由具备资质的外科医生或肝胆专科医师根据完整检查与面诊后决定。
+          如有症状加重、持续腹痛、发热、黄疸等情况，请立即就医。使用本工具不构成医患关系，不承担任何医疗责任。
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>保胆手术适应性初步评估工具</title>
+    <title>胆结石就诊信息整理工具</title>
+    <meta name="description" content="整理胆结石症状和已有检查，生成就诊讨论摘要。不评估手术适合性，不提供诊断或治疗建议。" />
+    <link rel="canonical" href="https://tool.askdrliu.com/" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>保胆手术适应性初步评估工具</h1>
-        <p class="subtitle">胆囊保留治疗初筛问卷 - 仅供参考</p>
+        <h1>胆结石就诊信息整理工具</h1>
+        <p class="subtitle">整理症状与已有检查，帮助准备就诊讨论</p>
       </header>
 
       <main>
@@ -208,7 +210,7 @@
           </section>
 
           <div class="button-group">
-            <button type="submit" class="btn btn-primary">评估</button>
+            <button type="submit" class="btn btn-primary">生成就诊摘要</button>
             <button type="button" id="resetBtn" class="btn btn-secondary">重置</button>
           </div>
         </form>
@@ -217,7 +219,7 @@
           <div id="resultContent"></div>
           <div class="button-group">
             <button type="button" id="copyBtn" class="btn btn-primary">复制结果</button>
-            <button type="button" id="newAssessmentBtn" class="btn btn-secondary">新评估</button>
+            <button type="button" id="newAssessmentBtn" class="btn btn-secondary">重新填写</button>
           </div>
         </div>
       </main>
@@ -225,8 +227,8 @@
       <footer class="disclaimer">
         <h3>⚠️ 重要声明</h3>
         <p>
-          本工具仅为教育性质的初步风险筛查问卷，<strong>不能替代专业医生的临床诊断与决策</strong>。
-          所有结果均基于简化规则，不考虑个体差异及完整病史。任何治疗方案的选择，必须由具备资质的外科医生或肝胆专科医师根据完整检查与面诊后决定。
+          本工具只帮助整理填写的信息，不进行风险分级或手术适合性判断，<strong>不能替代专业医生的临床诊断与决策</strong>。
+          摘要仅复述您选择的信息，不提供诊断、治疗建议，也不要求您自行增加检查。任何治疗方案的选择，必须由具备资质的外科医生或肝胆专科医师根据完整检查与面诊后决定。
           如有症状加重、持续腹痛、发热、黄疸等情况，请立即就医。使用本工具不构成医患关系，不承担任何医疗责任。
         </p>
       </footer>
@@ -235,3 +237,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
